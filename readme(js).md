@@ -19,3 +19,11 @@ No javascript chamamos a função "menuShow" que está localizada em um botão, 
 }"
 
 ou seja, caso ela for clicada, já que ao contrário de não ser clicada, ela irá aparecer o display block e irá adicionar as nossas "<ul>" normalmente e adicionará o icone de "X" que será para retornar tudo ao começo e virar um "loppinn"
+
+
+window.addEventListener("scroll", function() {
+    let header = document.querySelector('#header')
+    header.classList.toggle('rolagem', window.scrollY > 0)
+} )
+
+o window vai avisar quando ocorrer o evento chamado scroll que acontecerá  na header, já que aplicamos o efetio de rolagam no header. Ela irá ocorrer quando o scroll descer já que dizemos que o top no header valia 0, logo, ele irá chamar uma classe atribuida como 'rolagem'. 
